@@ -1,0 +1,7 @@
+train:
+python -m src.train --data data/raw/news.csv --model models/logreg_tfidf.joblib
+
+
+
+inference:
+python -m src.infer --model models/logreg_tfidf.joblib --text "This is a breaking news article..."
